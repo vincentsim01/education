@@ -26,18 +26,64 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libertinus+Math&display=swap" rel="stylesheet">
 
     <!-- Google Font As A Class -->
     <style>
         .font-lato{
             font-family:'lato',sans-serif;
         }
+
+        .font-libertinusmath{
+            font-family:'Libertinus Math', sans-serif;
+        }
     </style>
 
     <title>Education</title>
 </head>
 <body>
-    Hello World
+    <header class="flex h-[15%] md:h-[10%] w-[100%] items-center justify-between sticky top-0 shadow-lg bg-white/30 relative z-0">
+        <div class="md:hidden w-[15%]" id="burgericon">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+        <nav class="hidden w-[60%] md:w-[30%] shadow-lg absolute z-3 font-libertinusmath text-center" id="navmobile">
+            <p class="h-[5%] mb-2 border-b border-black hover:scale-105 hover:underline" id="navmobilehome"><a href="#">Home</a></p> 
+            <p class="h-[5%] mb-2 border-b border-black hover:scale-105 hover:underline" id="navmobileservices"><a href="#">Services</a></p>
+            <p class="h-[5%] mb-2 border-b border-black hover:scale-105 hover:underline" id="navmobileabout"><a href="#">About</a></p>
+            <p class="h-[5%] mb-2 border-b border-black hover:scale-105 hover:underline" id="navmobilecontact"><a href="#">Contact</a></p>
+            <p class="h-[5%] mb-2 border-b border-black hover:scale-105 hover:underline" id="navmobileblog"><a href="#">Blog</a>Blog</p>
+            <p class="h-[5%] mb-2 border-b border-black hover:scale-105 hover:underline" id="navmobilegallery"><a href="#">Gallery</a></p>
+        </nav>
+
+        <nav class="hidden md:block md:w-[35%] md:h-[90%] md:flex md:justify-between md:items-center md:ml-3 md:mr-3">
+            <p class="md:mr-3 md:ml-3 hover:scale-105 hover:underline" id="navmobilehome"><a href="#">Home</a></p> 
+            <p class="md:mr-3 md:ml-3 hover:scale-105 hover:underline" id="navmobileservices"><a href="#">Services</a></p>
+            <p class="md:mr-3 md:ml-3 hover:scale-105 hover:underline" id="navmobileabout"><a href="#">About</a></p>
+            <p class="md:mr-3 md:ml-3 hover:scale-105 hover:underline" id="navmobilecontact"><a href="#">Contact</a></p>
+            <p class="md:mr-3 md:ml-3 hover:scale-105 hover:underline" id="navmobileblog"><a href="#">Blog</a></p>
+            <p class="md:mr-3 md:ml-3 hover:scale-105 hover:underline" id="navmobilegallery"><a href="#">Gallery</a></p>
+        </nav>
+
+        <div class="w-[60%] md:w-[20%] flex justify-center items-center" id="headerlogocontainer">
+            <a href="#"><img src="./asset/educationlogo.png"></a>
+        </div>
+        <div class="flex justify-center items-center text-right pr-3 w-[35%] md:w-[40%]">
+            <div class="w-[40%] hidden md:block">
+                <input type="text" class="border-b border-black">
+            </div>
+            <div class="w-[10%] mr-5 hover:scale-105">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+            <div class="w-[10%] hover:scale-105">
+                <i class="fa-solid fa-user"></i>
+            </div>
+
+        </div>
+
+    </header>
+
 
     <script src="./js/script.js"></script>
 </body>
